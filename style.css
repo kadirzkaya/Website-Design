@@ -1,0 +1,178 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.img{
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(56,56,71,0.3),rgba(84, 84, 106, 0.3)),url(webdesign.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav div,.nav div ul li {
+    display: inline-block;
+}
+
+.links{
+    float: right;
+    margin-right: 30px;
+}
+
+.header .nav{
+    background-color: #36486b;
+    width: 100%;
+    height: 75px;
+    position: relative;
+    border-bottom: 2px solid #c94c4c;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a:hover{
+    color: #c94c4c;
+}
+
+.head{
+    position: absolute;
+    float: left;
+    left: 20%;
+    top: 35%;
+    color: white;
+    font-size: 1.2em;
+}
+
+.head span{
+    color: #c94c4c;
+}
+
+.links ul{
+    position: absolute;
+    right: 15%;
+    top: 35%;
+}
+
+.links ul li{
+    margin-right: 10px;
+}
+
+.img .text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50px);
+    color: white;
+    font-size: 1.2rem;
+    width: 90%;
+    text-align: center;
+}
+
+.bottombar{
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background-color: #36486b;
+}
+
+.bottomform{
+    position: absolute;
+    float: right;
+    right: 15%;
+    top: 30%;
+}
+
+.bottomform input{
+    padding: 10px;
+}
+
+input[type="button"]{
+    background: #c94c4c;
+    color: white;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.col-3{
+    width: 33%;
+    float: left;
+    padding-left: 10px;
+}
+
+.col-2{
+    width: 50%;
+    float: left;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.img1, .img2, .img3, .img4{
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+    margin-left: 40%;
+}
+
+.img1{
+    background-image: url(html5.png);
+}
+
+.img2{
+    background-image: url(css3.png);
+}
+
+.img3{
+    background-image: url(design.png);
+}
+
+.col-3 div{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer{
+    border-top: 2px solid #c94c4c;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.img4{
+    background-image: url(man.png);
+    margin-left: 47%;
+}
+
+@media screen and (max-width:786px) {
+    .head{
+        top: 15%;
+        left: 35%;
+    }
+
+    .bottomform{
+        right: 32%;
+        top: 40%;
+    }
+
+    .col-3{
+        width: 90%;
+        float: left;
+    }
+    
+}
